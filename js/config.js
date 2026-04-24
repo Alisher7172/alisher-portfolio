@@ -30,14 +30,7 @@ const PROJECTS = [
   {
     name: "School Cafeteria System",
     desc: "Full-stack cafeteria management platform with multi-role dashboards for students, kitchen staff, and admins. JWT auth and Docker support.",
-    stack: [
-      "TypeScript",
-      "Node.js",
-      "Express.js",
-      "PostgreSQL",
-      "React",
-      "Docker",
-    ],
+    stack: ["TypeScript", "PostgreSQL", "React", "HTML", "CSS"],
     github: "https://github.com/namashko15012010-code/canteen_management",
     demo: null,
   },
@@ -45,8 +38,7 @@ const PROJECTS = [
     name: "Halal Connect Bot",
     desc: "Telegram bot helping Muslims find halal shops, kitchens, and products nearby. Built with python-telegram-bot and deployed via Docker.",
     stack: ["Python", "python-telegram-bot", "PostgreSQL", "Docker"],
-    github: "https://github.com/Alisher7172",
-    demo: "https://t.me/euro_help_bot",
+    demo: null,
   },
 ];
 
