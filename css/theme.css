@@ -1,0 +1,26 @@
+/* ── COLOR & SPACING THEME ── */
+:root {
+  --bg0: #1e1e1e;
+  --bg1: #252526;
+  --bg2: #2d2d30;
+  --fg: #cccccc;
+  --fg-dim: #858585;
+  --accent: #569cd6;
+  --accent2: #4ec9b0;
+  --keyword: #569cd6;
+  --string: #ce9178;
+  --func: #dcdcaa;
+  --type: #4ec9b0;
+  --num: #b5cea8;
+  --comment: #6a9955;
+  --punct: #808080;
+  --prop: #9cdcfe;
+  --pl: #c586c0;
+  --border: #333;
+  --sidebar-w: 230px;
+  --activity-w: 48px;
+  --status-h: 22px;
+  --tab-h: 35px;
+  --title-h: 30px;
+  --scroll: #424242;
+}
