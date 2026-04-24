@@ -14,6 +14,13 @@ const ME = {
 
 const PROJECTS = [
   {
+    name: "School schedule parser",
+    desc: "Telegram bot that parses school schedules from HTML pages. Built with aiogram and delivered to client.",
+    stack: ["Python", "aiogram", "requests", "BeautifulSoup4"],
+    github: "https://github.com/Alisher7172/school-schedule-parser",
+    demo: null, // or null if no live demo
+  },
+  {
     name: "Dota2 Market Parser",
     desc: "Web scraper for the Dota 2 marketplace. Handles async requests with aiohttp and price unit normalization (kopeks → rubles).",
     stack: ["Python", "Flask", "aiohttp", "asyncio", "HTML", "CSS"],
