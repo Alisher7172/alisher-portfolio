@@ -1,56 +1,51 @@
-/**
- * app.js - Main application initialization
- * Initializes all modules and sets up the UI
- */
+function isMobile() {
+  return window.innerWidth <= 600;
+}
 
-/**
- * Initialize sidebar and activity bar functionality
- */
 function initSidebarEvents() {
-  // Activity bar panel toggles
+  const backdrop = document.getElementById("mobile-backdrop");
+
+  function closeSidebar() {
+    document.getElementById("sidebar").classList.add("collapsed");
+    document.querySelectorAll(".ai").forEach((i) => i.classList.remove("active"));
+    if (backdrop) backdrop.classList.remove("visible");
+  }
+
+  if (backdrop) {
+    backdrop.addEventListener("click", closeSidebar);
+  }
+
   document.querySelectorAll(".ai[data-panel]").forEach((icon) => {
     icon.addEventListener("click", () => {
       const sb = document.getElementById("sidebar");
       if (icon.classList.contains("active")) {
-        // Collapse sidebar
-        icon.classList.remove("active");
-        sb.classList.add("collapsed");
+        closeSidebar();
       } else {
-        // Expand sidebar
-        document
-          .querySelectorAll(".ai")
-          .forEach((i) => i.classList.remove("active"));
+        document.querySelectorAll(".ai").forEach((i) => i.classList.remove("active"));
         icon.classList.add("active");
         sb.classList.remove("collapsed");
+        if (isMobile() && backdrop) backdrop.classList.add("visible");
       }
     });
   });
 
-  // Sidebar close button
-  document.getElementById("sb-close").addEventListener("click", () => {
-    document.getElementById("sidebar").classList.add("collapsed");
-    document
-      .querySelectorAll(".ai")
-      .forEach((i) => i.classList.remove("active"));
-  });
+  document.getElementById("sb-close").addEventListener("click", closeSidebar);
 }
 
-/**
- * Main initialization function
- * Called when DOM is fully loaded
- */
 function initApp() {
-  // Initialize all event listeners
   initEditorEvents();
   initTerminalEvents();
   initPaletteEvents();
   initGlobalShortcuts();
   initSidebarEvents();
 
-  // Render initial editor state
   renderEditor("home");
 
-  // Show welcome notification
+  if (isMobile()) {
+    document.getElementById("sidebar").classList.add("collapsed");
+    document.querySelectorAll(".ai").forEach((i) => i.classList.remove("active"));
+  }
+
   setTimeout(() => {
     notify(
       "Welcome to Alisher's Portfolio! Press Ctrl+P to open command palette",
@@ -58,10 +53,6 @@ function initApp() {
   }, 500);
 }
 
-// Initialize app when DOM is ready
-document.addEventListener("DOMContentLoaded", initApp);
-
-// Alternative initialization if DOM is already loaded
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", initApp);
 } else {

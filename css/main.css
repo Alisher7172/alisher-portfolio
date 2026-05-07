@@ -1095,3 +1095,146 @@ code {
 .pl-btn.gh:hover {
   background: rgba(78, 201, 176, 0.1);
 }
+
+/* ── RESPONSIVE: TABLET (≤ 900px) ── */
+@media (max-width: 900px) {
+  #minimap {
+    display: none;
+  }
+
+  .proj-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #cmd-palette {
+    width: calc(100vw - 32px);
+    max-width: 540px;
+  }
+}
+
+/* ── RESPONSIVE: MOBILE (≤ 600px) ── */
+@media (max-width: 600px) {
+  :root {
+    --activity-w: 44px;
+    --title-h: 36px;
+  }
+
+  #menu-bar {
+    display: none;
+  }
+
+  .tb-title {
+    display: none;
+  }
+
+  .tlights {
+    display: none;
+  }
+
+  .ai {
+    height: 48px;
+    width: var(--activity-w);
+  }
+
+  #sidebar {
+    position: fixed;
+    top: var(--title-h);
+    left: var(--activity-w);
+    bottom: var(--status-h);
+    z-index: 80;
+    width: var(--sidebar-w);
+    box-shadow: 6px 0 20px rgba(0, 0, 0, 0.6);
+  }
+
+  #line-numbers {
+    padding: 16px 8px;
+    font-size: 12px;
+    min-width: 36px;
+  }
+
+  #editor-content {
+    font-size: 12px;
+    padding-left: 10px;
+  }
+
+  #home-overlay {
+    padding: 20px 16px 20px 56px;
+    overflow-y: auto;
+    pointer-events: auto;
+    align-items: flex-start;
+  }
+
+  .hero-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .hn {
+    font-size: 22px;
+  }
+
+  .ha {
+    width: 48px;
+    height: 48px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .hero-photo,
+  .photo-placeholder {
+    width: 130px;
+    height: 160px;
+  }
+
+  .hbtns {
+    gap: 8px;
+  }
+
+  .hbtn {
+    padding: 8px 14px;
+    font-size: 11px;
+  }
+
+  #terminal-container.open {
+    height: 180px;
+  }
+
+  .sl-right .si:not(#toggle-term-btn):not(#lang-si) {
+    display: none;
+  }
+
+  #cmd-overlay {
+    padding-top: 60px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  #cmd-palette {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #breadcrumbs {
+    font-size: 11px;
+    padding: 0 8px;
+  }
+
+  #mobile-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 75;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+  }
+
+  #mobile-backdrop.visible {
+    opacity: 1;
+    pointer-events: all;
+  }
+}

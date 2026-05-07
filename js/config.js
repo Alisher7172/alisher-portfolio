@@ -15,6 +15,24 @@ const ME = {
 const PROJECTS = [
   {
     name: "School schedule parser",
+    desc: "Website for Muslim community in EU to find halal shops, kitchens, and products nearby. Built with Spring Boot, PostgreSQL, and Next.js. Deployed on Railway with Docker.",
+    stack: [
+      "Spring Boot",
+      "PostgreSQL",
+      "liquibase",
+      "cloudinary",
+      "Docker compose",
+      "JPA",
+      "Gradle",
+      "Next.js",
+      "Typescript",
+      "React",
+    ],
+    github: null,
+    demo: "https://halalconnect.lat/",
+  },
+  {
+    name: "School schedule parser",
     desc: "Telegram bot that parses school schedules from HTML pages. Built with aiogram and delivered to client.",
     stack: ["Python", "aiogram", "requests", "BeautifulSoup4"],
     github: "https://github.com/Alisher7172/school-schedule-parser",
