@@ -204,44 +204,7 @@ function skillsLines() {
 }
 
 function projectsLines() {
-  return [
-    `<code><span class="cm">// projects.js — Things Alisher built</span></code>`,
-    `<code></code>`,
-    `<code><span class="kw">const</span> <span class="hl">projects</span> = [</code>`,
-    `<code></code>`,
-    `<code>  <span class="cm">// ── 1. Dota2 Market Parser ─────────────────</span></code>`,
-    `<code>  {</code>`,
-    `<code>    <span class="hl">name</span>:   <span class="st">'Dota2 Market Parser'</span>,</code>`,
-    `<code>    <span class="hl">desc</span>:   <span class="st">'Scraper for Dota 2 marketplace prices.</span></code>`,
-    `<code>            <span class="st">Async aiohttp, kopeks→rubles fix.'</span>,</code>`,
-    `<code>    <span class="hl">stack</span>:  [<span class="st">'Python'</span>, <span class="st">'Flask'</span>, <span class="st">'aiohttp'</span>, <span class="st">'HTML'</span>, <span class="st">'CSS'</span>],</code>`,
-    `<code>    <span class="hl">github</span>: <span class="st">'https://github.com/Alisher7172/dota2_market_parser'</span>,</code>`,
-    `<code>  },</code>`,
-    `<code></code>`,
-    `<code>  <span class="cm">// ── 2. School Cafeteria System ─────────────</span></code>`,
-    `<code>  {</code>`,
-    `<code>    <span class="hl">name</span>:   <span class="st">'School Cafeteria System'</span>,</code>`,
-    `<code>    <span class="hl">desc</span>:   <span class="st">'Full-stack canteen management platform.</span></code>`,
-    `<code>            <span class="st">Multi-role dashboards, JWT auth, Docker.'</span>,</code>`,
-    `<code>    <span class="hl">stack</span>:  [<span class="st">'TypeScript'</span>, <span class="st">'Node.js'</span>, <span class="st">'Express.js'</span>,</code>`,
-    `<code>             <span class="st">'PostgreSQL'</span>, <span class="st">'React'</span>, <span class="st">'Docker'</span>],</code>`,
-    `<code>    <span class="hl">github</span>: <span class="st">'https://github.com/namashko15012010-code/canteen_management'</span>,</code>`,
-    `<code>  },</code>`,
-    `<code></code>`,
-    `<code>  <span class="cm">// ── 3. Halal Connect Bot ───────────────────</span></code>`,
-    `<code>  {</code>`,
-    `<code>    <span class="hl">name</span>:   <span class="st">'Halal Connect Bot'</span>,</code>`,
-    `<code>    <span class="hl">desc</span>:   <span class="st">'Telegram bot helping Muslims find halal</span></code>`,
-    `<code>            <span class="st">shops, kitchens, and products nearby.'</span>,</code>`,
-    `<code>    <span class="hl">stack</span>:  [<span class="st">'Python'</span>, <span class="st">'python-telegram-bot'</span>,</code>`,
-    `<code>             <span class="st">'PostgreSQL'</span>, <span class="st">'Docker'</span>],</code>`,
-    `<code>    <span class="hl">github</span>: <span class="st">'https://github.com/Alisher7172'</span>,</code>`,
-    `<code>    <span class="hl">demo</span>:   <span class="st">'https://t.me/euro_help_bot'</span>,</code>`,
-    `<code>  },</code>`,
-    `<code></code>`,
-    `<code>]</code>`,
-    `<code><span class="kw">export default</span> projects</code>`,
-  ];
+  return [];
 }
 
 function contactLines() {
