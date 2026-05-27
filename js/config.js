@@ -32,6 +32,20 @@ const PROJECTS = [
     demo: "https://halalconnect.lat/",
   },
   {
+    name: "Telegram bot that sells programming courses",
+    desc: "I keep the bot maintained in the server. (ubuntu)",
+    stack: ["Python", "aiogram"],
+    github: "https://github.com/Alisher7172/",
+    demo: "https://t.me/progerdop_bot",
+  },
+  {
+    name: "Marketing and adds courses seller bot",
+    desc: "I keep the bot maintained in the server. (ubuntu)",
+    stack: ["Python", "aiogram", "httpx"],
+    github: "https://github.com/Alisher7172/",
+    demo: "https://t.me/businesezy_bot",
+  },
+  {
     name: "School schedule parser",
     desc: "Telegram bot that parses school schedules from HTML pages. Built with aiogram and delivered to client.",
     stack: ["Python", "aiogram", "requests", "BeautifulSoup4"],
