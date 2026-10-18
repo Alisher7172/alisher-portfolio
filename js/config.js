@@ -174,6 +174,7 @@ function skillsLines() {
     `<code><span class="hl">.primary-skills</span> {</code>`,
     `<code>  <span class="kw">--java</span>:       <span class="st">"Java + Spring Boot"</span>;  <span class="cm">/* ★★★★★ */</span></code>`,
     `<code>  <span class="kw">--html</span>:       <span class="st">"HTML"</span>;                <span class="cm">/* ★★★★☆ */</span></code>`,
+    `<code>  <span class="kw">--Python</span>:     <span class="st">"Python"</span>;            <span class="cm">/* ★★★★☆ */</span></code>`,
     `<code>  <span class="kw">--css</span>:        <span class="st">"CSS"</span>;                 <span class="cm">/* ★★★★☆ */</span></code>`,
     `<code>  <span class="kw">--bootstrap</span>:  <span class="st">"Bootstrap"</span>;           <span class="cm">/* ★★★★☆ */</span></code>`,
     `<code>}</code>`,
